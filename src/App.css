@@ -1,9 +1,8 @@
 
 .app {
-  font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #141414;
-  color: #fff;
+ 
+  color: #241c1c;
 }
 
 h1 {
@@ -24,4 +23,35 @@ h1 {
 
 .add-button:hover {
   background-color: #b0060f;
+}
+/* App.css */
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+
+  text-align: center;
+}
+
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.movie-card h3 {
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #333;
 }
